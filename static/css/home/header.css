@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  justify-content: space-between;
+  padding: 1.7rem 3.4rem 1.7rem 3.4rem;
+
+  /* --- Main Menu and Logo --- */
+  .menu-area {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      color: #2f3645;
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    /* --- Main Menu --- */
+    .mainmenu {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0 2.7rem;
+    }
+
+    .mainmenu-item {
+      position: relative;
+
+      a {
+        color: #2f3645;
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        text-decoration: none;
+        transition: color 0.2s ease-out;
+
+        svg {
+          width: 0.7rem;
+          margin-left: 0.2rem;
+          margin-bottom: 0.05rem;
+          transition-property: transform, color;
+          transition-duration: 0.2s;
+          transition-timing-function: ease-out;
+        }
+      }
+
+      &:hover {
+        a {
+          color: #604cc3;
+
+          svg {
+            transform: rotate(-180deg);
+
+            path {
+              fill: #604cc3;
+            }
+          }
+        }
+      }
+
+      /* margin-left isn't required for the first item */
+      &:not(:first-child) {
+        margin-left: 1.7rem;
+      }
+    }
+
+    .has-children:hover {
+      .submenu {
+        display: flex;
+        scale: 1;
+        opacity: 1;
+      }
+    }
+
+    /* --- Sub Menu --- */
+    .submenu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: max-content;
+      scale: 0; /* Hidden by default */
+      opacity: 0; /* Hidden by default */
+      transition: opacity 0.2s ease-out;
+      background-color: #ffffff;
+      border: 1px solid #2f364528;
+      padding: 2.2rem;
+      margin-top: 0.6rem;
+      border-radius: 0.5rem;
+      list-style: none;
+      color: #2f3645;
+      font-family: "Noto Sans", sans-serif;
+
+      /* To prevent submenu from disappearing until the cursor hovers on it */
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2.2rem;
+        transform: translateY(-2.2rem);
+      }
+
+      li {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition-property: color, transform;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-out;
+
+        &:hover {
+          color: #604cc3;
+          transform: translateX(0.5rem);
+        }
+
+        &:not(:first-child) {
+          margin-top: 1.5rem;
+        }
+
+        span {
+          margin-top: 0.2rem;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  /* --- Actions Area --- */
+  .actions {
+    display: flex;
+    align-items: center;
+
+    button {
+      border: none;
+      outline: none;
+      z-index: 10;
+      cursor: pointer;
+      padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+      border-radius: 10rem;
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+    }
+
+    .separator {
+      background-color: #2f364521;
+      height: 2rem;
+      width: 0.07rem;
+    }
+
+    .search {
+      outline: none;
+      color: #2f3645;
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      border-radius: 0.4rem;
+      font-size: 0.9rem;
+      transform: translateX(2.4rem);
+      z-index: 0;
+      margin-top: 1px;
+      transition: width 0.7s ease-out, border 0.7s ease-out, scale 0s ease 0.5s;
+
+      /* Hidden by default */
+      width: 0rem;
+      scale: 0;
+      border: 1px solid #2f364500;
+      padding: 0.65rem 0 0.65rem 0;
+
+      &.has-expanded {
+        width: 18rem;
+        scale: 1;
+        border: 1px solid #2f36452d;
+        padding: 0.65rem 2rem 0.65rem 1.8rem;
+        transition: width 0.7s ease-out, border 0.7s ease-out, scale 0s ease;
+      }
+
+      &::-webkit-search-cancel-button {
+        display: none;
+      }
+    }
+
+    .close-searchbar {
+      background-color: transparent;
+      transform: translateX(3.8rem);
+      padding: 0;
+
+      &:not(.close-searchbar.has-expanded) {
+        display: none;
+      }
+
+      img {
+        height: 0.6rem;
+        opacity: 0.7;
+      }
+    }
+
+    .action-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: 1px solid #2f36452d;
+      border-radius: 50%;
+      height: 2.1rem;
+      width: 2.1rem;
+      padding: 0;
+      margin-right: 1.5rem;
+
+      transition-property: background-color, scale;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+
+      transition: background-color 0.2s ease-in-out, scale 0.2s ease-in-out,
+        border 0.5s ease-out 0.7s;
+
+      &:hover {
+        background-color: #f7f7f7;
+      }
+
+      &.has-expanded {
+        scale: 1.1;
+        background-color: transparent;
+        border: 1px solid #2f364500;
+        transition: background-color 0.2s ease-in-out, scale 0.2s ease-in-out,
+          border 0s ease-out;
+      }
+
+      &:not(:nth-child(5)) {
+        margin-right: 0.8rem;
+      }
+
+      img {
+        height: 0.8rem;
+      }
+    }
+
+    .login {
+      background-color: transparent;
+      margin-left: 0.4rem;
+      font-size: 1rem;
+      font-weight: 500;
+
+      span {
+        color: #604cc3;
+        transition: none;
+
+        &:hover {
+          transition: color 0.3s ease-out;
+          color: transparent;
+
+          background: linear-gradient(
+            90deg,
+            rgba(127, 39, 255, 1) 0%,
+            rgba(127, 39, 255, 1) 35%,
+            rgba(218, 12, 129, 1) 100%
+          );
+
+          background-clip: text;
+        }
+      }
+    }
+
+    .sign-up {
+      position: relative;
+      background-color: #604cc3;
+
+      /* Change the background into a gradient on hover. 
+         Use ::before pseudo element to add a transition as I'm using a gradient bg for this on hover. */
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        border-radius: 10rem;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(
+          90deg,
+          rgba(127, 39, 255, 1) 0%,
+          rgba(127, 39, 255, 1) 35%,
+          rgba(218, 12, 129, 1) 100%
+        );
+      }
+
+      font-size: 0.95rem;
+      color: #ffffff;
+    }
+  }
+}

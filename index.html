@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kawaii | Online Fashion Store in Sri Lanka</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/css/home.css" />
+
+    <!-- Preconncts (for Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font: Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font: Noto Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Logo and Main Menu -->
+      <div class="menu-area">
+        <h1>Kawaii</h1>
+
+        <nav>
+          <ul class="mainmenu">
+            <li class="mainmenu-item"><a href="#">Home</a></li>
+
+            <!-- Item with children -->
+            <li class="mainmenu-item has-children">
+              <a href="#">
+                Categories
+                <!-- prettier-ignore -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#2F3645" viewBox="266.42 -613.77 427.35 240.85"><path d="M480-372.92q-7.23 0-13.46-2.31t-11.85-7.92L274.92-562.92q-8.3-8.31-8.5-20.89-.19-12.57 8.5-21.27 8.7-8.69 21.08-8.69 12.38 0 21.08 8.69L480-442.15l162.92-162.93q8.31-8.3 20.89-8.5 12.57-.19 21.27 8.5 8.69 8.7 8.69 21.08 0 12.38-8.69 21.08L505.31-383.15q-5.62 5.61-11.85 7.92-6.23 2.31-13.46 2.31Z"/></svg>
+              </a>
+
+              <!-- Children -->
+              <ul class="submenu">
+                <li>
+                  Men’s Fashion
+                  <span>Discover the latest trends in men’s clothing.</span>
+                </li>
+
+                <li>
+                  Women’s Fashion
+                  <span>Explore stylish outfits for women.</span>
+                </li>
+
+                <li>
+                  Kids Fashion
+                  <span>Find adorable and trendy kids' clothing.</span>
+                </li>
+
+                <li>
+                  Home and Living
+                  <span>Find beautiful items to enhance your home.</span>
+                </li>
+
+                <li>
+                  Gift Vouchers
+                  <span>Give the perfect gift with our vouchers.</span>
+                </li>
+              </ul>
+            </li>
+
+            <li class="mainmenu-item"><a href="#"> New Arrivals</a></li>
+            <li class="mainmenu-item"><a href="#">Sale</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button
+          class="close-searchbar"
+          id="close-searchbar"
+          onclick="closeSearchBar()">
+          <img
+            src="static/icons/close-searchbar.svg"
+            alt="Icon for Searchbar Close Button" />
+        </button>
+
+        <input
+          type="search"
+          id="search"
+          class="search"
+          placeholder="Search..." />
+
+        <button
+          class="action-button"
+          id="search-button"
+          onclick="openSearchBar()"
+          title="Search Products">
+          <img src="static/icons/search.svg" alt="Search Icon" />
+        </button>
+
+        <button class="action-button" title="My Favourites">
+          <img src="static/icons/fav.svg" alt="Favourites Icon" />
+        </button>
+
+        <button class="action-button" title="My Cart">
+          <img src="static/icons/cart.svg" alt="Cart Icon" />
+        </button>
+
+        <div class="separator"></div>
+
+        <button class="login"><span>Login</span></button>
+        <button class="sign-up">Sign up</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero"></section>
+
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
