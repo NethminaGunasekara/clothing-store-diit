@@ -39,16 +39,36 @@ const closeSearchBar = () => {
   // Change search button behaviour
   searchBtn.onclick = openSearchBar;
 };
-/**
- * 
-// Show or hide children of a list
-document.getElementById("categories").addEventListener("click", (event) => {
-  const parent = event.currentTarget.parentElement;
 
-  if (parent.classList.contains("expanded")) {
-    parent.classList.remove("expanded");
-  } else {
-    parent.classList.add("expanded");
+// ---- Add To Favourites button ---
+(() => {
+  const buttons = document.getElementsByClassName("add-to-favourites");
+
+  for (const btn of buttons) {
+    btn.addEventListener("click", () => {
+      !btn.classList.contains("favourited")
+        ? btn.classList.add("favourited")
+        : btn.classList.remove("favourited");
+    });
   }
-});
-*/
+})();
+
+// ---- Color selection buttons ---
+(() => {
+  const buttons = document.getElementsByClassName("color");
+
+  for (const btn of buttons) {
+    btn.addEventListener("click", (e) => {
+      // Mark current color as the active color by replacing the previous one
+      const colors = e.target.parentElement.children;
+
+      // Mark the previously active color as inactive
+      for (const color of colors) {
+        color.classList.contains("active") && color.classList.remove("active");
+      }
+
+      // Set the new active color
+      e.target.classList.add("active");
+    });
+  }
+})();

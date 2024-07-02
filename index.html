@@ -36,7 +36,12 @@
 
         <nav>
           <ul class="mainmenu">
-            <li class="mainmenu-item"><a href="#">Home</a></li>
+            <li class="mainmenu-item">
+              <a
+                onclick='alert("Not Implemented: This may scroll to the top of the homepage.")'
+                >Home</a
+              >
+            </li>
 
             <!-- Item with children -->
             <li class="mainmenu-item has-children">
@@ -75,8 +80,18 @@
               </ul>
             </li>
 
-            <li class="mainmenu-item"><a href="#"> New Arrivals</a></li>
-            <li class="mainmenu-item"><a href="#">Sale</a></li>
+            <li class="mainmenu-item">
+              <a
+                onclick='alert("Not Implemented: This may redirect you to the \"New Arrivals\" page.")'>
+                New Arrivals</a
+              >
+            </li>
+            <li class="mainmenu-item">
+              <a
+                onclick='alert("Not Implemented: This may redirect you to the \"Items on Sale\" page.")'
+                >Sale</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -106,23 +121,439 @@
           <img src="static/icons/search.svg" alt="Search Icon" />
         </button>
 
-        <button class="action-button" title="My Favourites">
+        <button
+          class="action-button"
+          onclick='alert("Not Implemented: This may open your Favourites list.")'
+          title="My Favourites">
           <img src="static/icons/fav.svg" alt="Favourites Icon" />
         </button>
 
-        <button class="action-button" title="My Cart">
+        <button
+          class="action-button"
+          onclick='alert("Not Implemented: This may open your Shopping Cart.")'
+          title="My Cart">
           <img src="static/icons/cart.svg" alt="Cart Icon" />
         </button>
 
         <div class="separator"></div>
 
-        <button class="login"><span>Login</span></button>
-        <button class="sign-up">Sign up</button>
+        <button
+          class="login"
+          onclick='alert("Not Implemented: This may open the login form.")'>
+          <span>Login</span>
+        </button>
+        <button
+          class="sign-up"
+          onclick='alert("Not Implemented: This may open the sign-up form.")'>
+          Sign up
+        </button>
       </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero"></section>
+    <section class="hero">
+      <div class="content">
+        <span>PASSION FOR FASHION</span>
+
+        <h1>
+          Wear Better <br />
+          Look Better
+        </h1>
+
+        <p>
+          Upgrade your wardrobe with the latest trends and timeless pieces.
+          Discover high-quality clothing and accessories that flatter your
+          figure and express your unique style. Shop now and enjoy the best in
+          fashion.
+        </p>
+
+        <button
+          onclick='alert("Not Implemented: This may redirect you to the \"New Arrivals\" page.")'>
+          Shop New Arrivals Now!
+        </button>
+      </div>
+
+      <div class="image">
+        <img src="static/images/hero-image.png" alt="Hero Image" />
+      </div>
+    </section>
+
+    <!-- Seoarator -->
+    <div class="new-section">
+      <h2>NEW ARRIVALS</h2>
+      <hr />
+    </div>
+
+    <!-- Products -->
+    <div class="products">
+      <!-- Product: Men’s Slim Fit Chino Pant -->
+      <div class="card">
+        <img
+          src="static/images/product-images/chino-trousers.png"
+          alt="Chino Trousers product image" />
+
+        <p class="product-name">Men’s Slim Fit Chino Pant</p>
+
+        <button class="add-to-favourites">
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/s  vg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE4E4E"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z"/></svg>
+        </button>
+
+        <p class="product-overview">
+          High-quality, stylish Chino Pants available in various colours.
+        </p>
+
+        <p class="product-price">Rs. 7,890.00</p>
+
+        <div class="colours">
+          <button
+            class="color"
+            style="background-color: #2f3645; border-color: #2f3645"></button>
+          <button
+            class="color"
+            style="background-color: #667bc6; border-color: #667bc6"></button>
+          <button
+            class="color"
+            style="background-color: #f9e2af; border-color: #f9e2af"></button>
+          <button
+            class="color"
+            style="background-color: #e6b9a6; border-color: #e6b9a6"></button>
+          <button
+            class="color"
+            style="background-color: #36ba98; border-color: #36ba98"></button>
+        </div>
+
+        <button
+          class="add-to-cart"
+          onclick='alert("Not Implemented: This may add the selected item to shopping cart.")'>
+          <span>Add to cart</span>
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </button>
+      </div>
+
+      <!-- Product: Men’s Slim Fit Chino Pant -->
+      <div class="card">
+        <img
+          src="static/images/product-images/chino-trousers.png"
+          alt="Chino Trousers product image" />
+
+        <p class="product-name">Men’s Slim Fit Chino Pant</p>
+
+        <button class="add-to-favourites">
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/s  vg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE4E4E"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z"/></svg>
+        </button>
+
+        <p class="product-overview">
+          High-quality, stylish Chino Pants available in various colours.
+        </p>
+
+        <p class="product-price">Rs. 7,890.00</p>
+
+        <div class="colours">
+          <button
+            class="color"
+            style="background-color: #2f3645; border-color: #2f3645"></button>
+          <button
+            class="color"
+            style="background-color: #667bc6; border-color: #667bc6"></button>
+          <button
+            class="color"
+            style="background-color: #f9e2af; border-color: #f9e2af"></button>
+          <button
+            class="color"
+            style="background-color: #e6b9a6; border-color: #e6b9a6"></button>
+          <button
+            class="color"
+            style="background-color: #36ba98; border-color: #36ba98"></button>
+        </div>
+
+        <button
+          class="add-to-cart"
+          onclick='alert("Not Implemented: This may add the selected item to shopping cart.")'>
+          <span>Add to cart</span>
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </button>
+      </div>
+
+      <!-- Product: Men’s Slim Fit Chino Pant -->
+      <div class="card">
+        <img
+          src="static/images/product-images/chino-trousers.png"
+          alt="Chino Trousers product image" />
+
+        <p class="product-name">Men’s Slim Fit Chino Pant</p>
+
+        <button class="add-to-favourites">
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/s  vg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE4E4E"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z"/></svg>
+        </button>
+
+        <p class="product-overview">
+          High-quality, stylish Chino Pants available in various colours.
+        </p>
+
+        <p class="product-price">Rs. 7,890.00</p>
+
+        <div class="colours">
+          <button
+            class="color"
+            style="background-color: #2f3645; border-color: #2f3645"></button>
+          <button
+            class="color"
+            style="background-color: #667bc6; border-color: #667bc6"></button>
+          <button
+            class="color"
+            style="background-color: #f9e2af; border-color: #f9e2af"></button>
+          <button
+            class="color"
+            style="background-color: #e6b9a6; border-color: #e6b9a6"></button>
+          <button
+            class="color"
+            style="background-color: #36ba98; border-color: #36ba98"></button>
+        </div>
+
+        <button
+          class="add-to-cart"
+          onclick='alert("Not Implemented: This may add the selected item to shopping cart.")'>
+          <span>Add to cart</span>
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </button>
+      </div>
+
+      <!-- Product: Men’s Slim Fit Chino Pant -->
+      <div class="card">
+        <img
+          src="static/images/product-images/chino-trousers.png"
+          alt="Chino Trousers product image" />
+
+        <p class="product-name">Men’s Slim Fit Chino Pant</p>
+
+        <button class="add-to-favourites">
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/s  vg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE4E4E"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z"/></svg>
+        </button>
+
+        <p class="product-overview">
+          High-quality, stylish Chino Pants available in various colours.
+        </p>
+
+        <p class="product-price">Rs. 7,890.00</p>
+
+        <div class="colours">
+          <button
+            class="color"
+            style="background-color: #2f3645; border-color: #2f3645"></button>
+          <button
+            class="color"
+            style="background-color: #667bc6; border-color: #667bc6"></button>
+          <button
+            class="color"
+            style="background-color: #f9e2af; border-color: #f9e2af"></button>
+          <button
+            class="color"
+            style="background-color: #e6b9a6; border-color: #e6b9a6"></button>
+          <button
+            class="color"
+            style="background-color: #36ba98; border-color: #36ba98"></button>
+        </div>
+
+        <button
+          class="add-to-cart"
+          onclick='alert("Not Implemented: This may add the selected item to shopping cart.")'>
+          <span>Add to cart</span>
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </button>
+      </div>
+
+      <!-- Product: Men’s Slim Fit Chino Pant -->
+      <div class="card">
+        <img
+          src="static/images/product-images/chino-trousers.png"
+          alt="Chino Trousers product image" />
+
+        <p class="product-name">Men’s Slim Fit Chino Pant</p>
+
+        <button class="add-to-favourites">
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/s  vg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE4E4E"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z"/></svg>
+        </button>
+
+        <p class="product-overview">
+          High-quality, stylish Chino Pants available in various colours.
+        </p>
+
+        <p class="product-price">Rs. 7,890.00</p>
+
+        <div class="colours">
+          <button
+            class="color"
+            style="background-color: #2f3645; border-color: #2f3645"></button>
+          <button
+            class="color"
+            style="background-color: #667bc6; border-color: #667bc6"></button>
+          <button
+            class="color"
+            style="background-color: #f9e2af; border-color: #f9e2af"></button>
+          <button
+            class="color"
+            style="background-color: #e6b9a6; border-color: #e6b9a6"></button>
+          <button
+            class="color"
+            style="background-color: #36ba98; border-color: #36ba98"></button>
+        </div>
+
+        <button
+          class="add-to-cart"
+          onclick='alert("Not Implemented: This may add the selected item to shopping cart.")'>
+          <span>Add to cart</span>
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </button>
+      </div>
+
+      <!-- Product: Men’s Slim Fit Chino Pant -->
+      <div class="card">
+        <img
+          src="static/images/product-images/chino-trousers.png"
+          alt="Chino Trousers product image" />
+
+        <p class="product-name">Men’s Slim Fit Chino Pant</p>
+
+        <button class="add-to-favourites">
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/s  vg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE4E4E"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z"/></svg>
+        </button>
+
+        <p class="product-overview">
+          High-quality, stylish Chino Pants available in various colours.
+        </p>
+
+        <p class="product-price">Rs. 7,890.00</p>
+
+        <div class="colours">
+          <button
+            class="color"
+            style="background-color: #2f3645; border-color: #2f3645"></button>
+          <button
+            class="color"
+            style="background-color: #667bc6; border-color: #667bc6"></button>
+          <button
+            class="color"
+            style="background-color: #f9e2af; border-color: #f9e2af"></button>
+          <button
+            class="color"
+            style="background-color: #e6b9a6; border-color: #e6b9a6"></button>
+          <button
+            class="color"
+            style="background-color: #36ba98; border-color: #36ba98"></button>
+        </div>
+
+        <button
+          class="add-to-cart"
+          onclick='alert("Not Implemented: This may add the selected item to shopping cart.")'>
+          <span>Add to cart</span>
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </button>
+      </div>
+
+      <!-- Product: Men’s Slim Fit Chino Pant -->
+      <div class="card">
+        <img
+          src="static/images/product-images/chino-trousers.png"
+          alt="Chino Trousers product image" />
+
+        <p class="product-name">Men’s Slim Fit Chino Pant</p>
+
+        <button class="add-to-favourites">
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/s  vg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE4E4E"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z"/></svg>
+        </button>
+
+        <p class="product-overview">
+          High-quality, stylish Chino Pants available in various colours.
+        </p>
+
+        <p class="product-price">Rs. 7,890.00</p>
+
+        <div class="colours">
+          <button
+            class="color"
+            style="background-color: #2f3645; border-color: #2f3645"></button>
+          <button
+            class="color"
+            style="background-color: #667bc6; border-color: #667bc6"></button>
+          <button
+            class="color"
+            style="background-color: #f9e2af; border-color: #f9e2af"></button>
+          <button
+            class="color"
+            style="background-color: #e6b9a6; border-color: #e6b9a6"></button>
+          <button
+            class="color"
+            style="background-color: #36ba98; border-color: #36ba98"></button>
+        </div>
+
+        <button
+          class="add-to-cart"
+          onclick='alert("Not Implemented: This may add the selected item to shopping cart.")'>
+          <span>Add to cart</span>
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </button>
+      </div>
+
+      <!-- Product: Men’s Slim Fit Chino Pant -->
+      <div class="card">
+        <img
+          src="static/images/product-images/chino-trousers.png"
+          alt="Chino Trousers product image" />
+
+        <p class="product-name">Men’s Slim Fit Chino Pant</p>
+
+        <button class="add-to-favourites">
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/s  vg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EE4E4E"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Z"/></svg>
+        </button>
+
+        <p class="product-overview">
+          High-quality, stylish Chino Pants available in various colours.
+        </p>
+
+        <p class="product-price">Rs. 7,890.00</p>
+
+        <div class="colours">
+          <button
+            class="color"
+            style="background-color: #2f3645; border-color: #2f3645"></button>
+          <button
+            class="color"
+            style="background-color: #667bc6; border-color: #667bc6"></button>
+          <button
+            class="color"
+            style="background-color: #f9e2af; border-color: #f9e2af"></button>
+          <button
+            class="color"
+            style="background-color: #e6b9a6; border-color: #e6b9a6"></button>
+          <button
+            class="color"
+            style="background-color: #36ba98; border-color: #36ba98"></button>
+        </div>
+
+        <button
+          class="add-to-cart"
+          onclick='alert("Not Implemented: This may add the selected item to shopping cart.")'>
+          <span>Add to cart</span>
+          <!-- prettier-ignore -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </button>
+      </div>
+    </div>
 
     <script src="static/js/main.js"></script>
   </body>
