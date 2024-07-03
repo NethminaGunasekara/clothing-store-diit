@@ -1,0 +1,52 @@
+.products {
+  display: grid;
+  padding: 0;
+  width: calc(100vw - 6.8rem);
+  margin: 3.4rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em 1em;
+  grid-template-areas:
+    ". . . ."
+    ". . . .";
+}
+
+/* --- Products --- */
+@media only screen and (max-width: 1200px) {
+  .products {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em 1em;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+
+    .card {
+      display: grid;
+      position: relative;
+      width: 25vw;
+      padding: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .products {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1em 1em;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". .";
+
+    .card {
+      display: grid;
+      position: relative;
+      width: 40vw;
+      padding: 1.5rem;
+    }
+  }
+}
