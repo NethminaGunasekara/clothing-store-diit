@@ -10,6 +10,7 @@
   );
 
   width: calc(100vw - 6.8rem);
+  min-height: 80vh;
   margin-left: 3.4rem;
   padding: 5.2rem;
   box-sizing: border-box;
@@ -17,6 +18,8 @@
 
   .content {
     width: 40vw;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-right: auto;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
